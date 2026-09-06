@@ -1,0 +1,28 @@
+# Rust build artifacts
+/target
+**/target
+Cargo.lock            # remove this line if any phase produces a *binary* you ship (embedded targets should commit Cargo.lock)
+**/*.rs.bk
+*.pdb
+
+# Embedded / probe-rs / OpenOCD artifacts
+*.elf
+*.bin
+*.hex
+*.map
+.gdb_history
+.embed.log
+openocd.log
+
+# Editor / OS junk
+.vscode/*
+!.vscode/extensions.json
+!.vscode/tasks.json
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+*.log
