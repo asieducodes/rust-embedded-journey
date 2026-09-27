@@ -9,5 +9,5 @@ fn fib(n:u32)->u32{
 }
 fn main(){
     let n:u32 = 10;
-    println!("The fib of {n} is: {}",fib(n));
+    println!("The fibonacci of {n} is: {}",fib(n));
 }
